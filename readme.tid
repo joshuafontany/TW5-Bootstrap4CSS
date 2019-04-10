@@ -1,0 +1,38 @@
+title: $:/plugins/@oss/bootstrap4/readme
+
+\define full_on()
+<$action-setfield $tiddler="$:/plugins/@oss/bootstrap4/bootstrap-host.css" $value="{{$:/plugins/@oss/bootstrap4/bootstrap.css}}"/>
+\end
+
+\define grid_on()
+<$action-setfield $tiddler="$:/plugins/@oss/bootstrap4/bootstrap-host.css" $value="{{$:/plugins/@oss/bootstrap4/bootstrap-grid.css}}"/>
+\end
+
+!! Tiddlywiki implementation of Bootstrap4 (v. {{$:/plugins/@oss/bootstrap4!!version}}):
+
+<$link $to={{$:/plugins/@oss/bootstrap4!!source}}>TW plugin source code</$link>
+
+[[Bootstrap Documentation|https://getbootstrap.com/docs/4.3/]]
+
+<$link $to={{$:/plugins/@oss/bootstrap4!!author}}>Bootstrap</$link>
+
+<$link $to={{$:/plugins/@oss/bootstrap4!!origin}}>Bootstrap source code</$link>
+
+<hr/>
+
+The [[$:/plugins/@oss/bootstrap4/bootstrap-host.css]] tiddler has the `$:/tags/Stylesheet` tag and transcludes the [[$:/plugins/@oss/bootstrap4/bootstrap-grid.css]] tiddler.
+
+To activate the full bootstrap css, click below. This will change the transcluded content into [[$:/plugins/@oss/bootstrap4/bootstrap.css]].
+
+<$set name="state" value="$:/config/plugins/@oss/bootstrap4">
+<$reveal type="nomatch" state=<<state>> text="Full">
+
+<$button set=<<state>> setTo="Full" actions=<<full_on>> >Activate Full Bootstrap</$button>
+
+</$reveal>
+<$reveal type="match" state=<<state>> text="Full">
+
+<$button set=<<state>> setTo="Grid" actions=<<grid_on>> >Activate Grid Bootstrap</$button>
+
+</$reveal>
+</$set>

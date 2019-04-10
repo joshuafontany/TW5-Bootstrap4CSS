@@ -1,0 +1,33 @@
+{
+  "tiddlers": [
+    {
+      "file": "bootstrap-host.css",
+      "fields": {
+        "type": "text/vnd.tiddlywiki",
+        "title": "$:/plugins/@oss/bootstrap4/bootstrap-host.css",
+        "tags": "$:/tags/Stylesheet"
+      }
+    },
+    {
+      "file": "bootstrap-grid.min.css",
+      "fields": {
+        "type": "text/css",
+        "title": "$:/plugins/@oss/bootstrap4/bootstrap-grid.css"
+      }
+    },
+      {
+      "file": "bootstrap.min.css",
+      "fields": {
+        "type": "text/css",
+        "title": "$:/plugins/@oss/bootstrap4/bootstrap.css"
+      }
+    },
+    {
+      "file": "LICENSE",
+      "fields": {
+        "type": "text/plain",
+        "title": "$:/plugins/@oss/bootstrap4/license"
+      }
+    }
+  ]
+}
