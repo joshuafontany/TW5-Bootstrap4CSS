@@ -7,7 +7,7 @@ You can see the effects of toggling the full or grid-only mode from the config p
 
 To install, drag and drop the following tiddlers into your own wiki:
 
-@oss/bootstrap4
+* $:/plugins/@oss/bootstrap4
 
 Or, clone this repository into your TiddlyWiki5 directory in `./Tiddlywiki5/plugins/@oss/bootstrap4`.
 
